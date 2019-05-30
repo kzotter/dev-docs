@@ -11,7 +11,7 @@ Current stable release versions are
 ## Requirements
 
 1. **Python:** We recommend you use Python 3.6 or above.
-2. **An Esper Dev Account:** You need a free Esper Dev Trial account to create an environment and generate an Esper `SERVER URL`to talk to APIs. You will choose the `ENVIRONMENT NAME` that will then be assigned as your custom URL. When you complete the sign up process your private environment will be created. See [Requesting an Esper Dev Trial account](https://docs.esper.io/home/gettingstarted.html#setup). 
+2. **Access to Esper Console:** You need a free Esper Trial account to create an endpoint and generate an Esper `SERVER URL`to talk to the APIs. You will choose the `ENVIRONMENT NAME` that will then be assigned as your custom URL. When you complete the sign up process your private endpoint will be created. See [Requesting an Esper Dev Trial account](https://docs.esper.io/home/gettingstarted.html#setup). 
 3. **Generate an API key:** API key authentication is used for accessing APIs. You will have to generate this from the Esper Dev Console once you have set up your account. For example, the Esper Dev Console for your account can be accessed at `https://foo.shoonyacloud.com` if you choose the `ENVIRONMENT NAME` of “foo”. See [Generating an API Key](https://docs.esper.io/home/module/genapikey.html)
 
 ## Installation
@@ -32,7 +32,7 @@ pip install git+https://github.com/esper-io/esper-cli.git
 
 #### From source
 
-Download/Clone the project and install via [Setuptools](http://pypi.python.org/pypi/setuptools).
+Download/clone the project and install via [Setuptools](http://pypi.python.org/pypi/setuptools).
 
 ```sh
 git clone https://github.com/esper-io/esper-cli.git
@@ -1182,4 +1182,4 @@ in_progress
 inactive     
 ```
 
-If you face any issue with CLI usage, we recommend you to reach out to [Esper Dev Support](https://docs.esper.io/home/support.html)
+If you face any issue with the Esper CLI, we recommend you to reach out to [Esper Dev Support](https://docs.esper.io/home/support.html)
