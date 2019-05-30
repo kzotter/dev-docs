@@ -1,19 +1,19 @@
 # Esper SDK for Python
 
-Esper provides a Python client library to communicate with the Esper APIs to programmatically control and monitor your enterprise's Android-based Dedicated Devices using Esper Manage. To read more about the various capabilities of Esper Manage and Esper managed devices, please visit [esper.io](https://esper.io).
+Esper provides a Python client library to communicate with the Esper APIs for programmatic provisioning, control and monitoring of your Android development devices running your Dedicated Device apps. These APIs are also used for scaled deployments. To read more about the various capabilities of Esper and sign up for a trial to obtain an endpoint and generate an API key for your app (both necessary to use the Esper APIs), please visit [esper.io](https://esper.io).
 
 Current stable release verions are
 
     API version: 1.0.0
     SDK version: 0.0.6
 
-> Note: Esper plans to release SDK support for Kotlin, Java, and JavaScript. If you are using a language other than Python and would like to immediately work with the Esper APIs, please consider calling the APIs directly. You can refer to the Esper API documentation [here](./api.md).
+> Note: Esper plans to release SDKs for Kotlin, Java, and JavaScript. If you are using a language other than Python and would like to immediately work with the Esper APIs, please consider calling the APIs directly. You can refer to the Esper API documentation [here](./api.md).
 
-## Pre-requisites
+## Requirements
 
-1. **Python:** It's recommended that you use Python 3.4 or above. However, SDK is compatible with Python 2.7 as well.
-2. **Access to Esper Dev console:** Sign up for the Esper Dev Trial to obtain access to the Esper Dev Console with a private Esper Cloud account. During that process you will set your environment name. Once your environment is set up you can login to your account on `foo.shoonyacloud.com` where “foo” is your chosen environment name giving you access to both the Esper Dev Console and the Esper Manage Dashboard. Your `SERVER URL` will be `https://foo-api.shoonyacloud.com/api`. See [Requesting an Esper Dev Trial account](./module/register.md). 
-3. **Generate an API key:** API key authentication is used for accessing APIs. You will have to generate this from the Esper Manage Dashboard. Web Dashboard for your account can be accessed at `https://foo.shoonyacloud.com`. See [Generating an API Key](./module/genapikey.md)
+1. **Python:** It's recommended to use Python 3.4 or above, as this is the requirement for the Esper CLI if you wish to use both. However, the SDK is compatible with Python 2.7 (set to retire in 2020) as well.
+2. **Access to Esper Console:** Sign up for the Esper Trial to obtain access to the Esper Console with a private Esper Cloud endpoint. During that process you will set your endpoint name. Once your endpoint is created you can login to your account on `foo.shoonyacloud.com` where “foo” is your chosen environment name. Your `SERVER URL` will be `https://foo.shoonyacloud.com/api`. See [Requesting an Esper Dev Trial account](./module/register.md). 
+3. **Generate an API key:** API key authentication is used for acessing APIs. You will have to generate an API key for your app from the Esper Console at `https://foo.shoonyacloud.com`. See [Generating an API Key](./module/genapikey.md)
 
 ## Installation
 
@@ -33,7 +33,7 @@ pip install git+https://github.com/esper-io/esper-client-py.git
 
 #### From source
 
-Download/Clone the project and install via [Setuptools](http://pypi.python.org/pypi/setuptools).
+Download/clone the project and install via [Setuptools](http://pypi.python.org/pypi/setuptools).
 
 ```sh
 git clone https://github.com/esper-io/esper-client-py.git
@@ -43,7 +43,7 @@ cd esper-client-py
 python setup.py install
 ```
 
-> You do not need to install setuptools separately since they are packaged along with the downloaded library
+> You do not need to install setuptools separately, they are packaged along with the downloaded library.
 
 
 ## Usage
@@ -54,23 +54,23 @@ Import esperclient package
 import esperclient
 ```
 
-Next, you need to configure your client to talk to APIs. For this you will need `SERVER URL` and `API KEY` as generated in [pre-requisites](#pre-requisites) section.
+Next, you need to configure your client to talk to the APIs. For this you will need `SERVER URL` (in the form foo.esper.cloud where foo is your endpoint name) and `API KEY` as generated in [pre-requisites](#pre-requisites) section. The API key used below is for example only.
 
 ```python
 configuration = esperclient.Configuration()
-configuration.host = 'https://myapp-api.shoonyacloud.com/api'
+configuration.host = 'https://foo.shoonyacloud.com/api'
 configuration.api_key['Authorization'] = 'LpDriKp7MWJiRGcwc8xzREeUj8OEFa'
 configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 ```
 
-Now you can perform various operations as described below. To see the complete list of actions and code samples, visit [SDK documentation](https://github.com/esper-io/esper-client-py#documentation-for-api-endpoints) To see response formats, visit [API documentation](https://esper-io.github.io/esper-api-spec/)
+Now you can perform various operations as described below. To see a complete list of actions and code samples visit [SDK documentation](https://github.com/esper-io/esper-client-py#documentation-for-api-endpoints). To see response formats visit [API documentation](https://esper-io.github.io/esper-api-spec/).
 
-Some additional information you'll need in order to access Esper APIs is your `enterprise ID`, which is a unique id assinged to your Esper Dev account. You can get your Enteprise ID from the web dashboard in `Enterprise Settings` tab. The Enterprise ID will be a string in UUID format i.e `595a6107-b137-448d-b217-e20cc58ee84d`.
+An additional parameter you'll need to access certain Esper APIs is your `enterprise ID`, a unique id assinged to your Esper account upon account creation. You can get your enteprise ID from the Esper Console in the `Enterprise Settings` tab. The Entperise ID will be a string in UUID format i.e `595a6107-b137-448d-b217-e20cc58ee84d`.
 
 ## Examples
 
-Some of the frequently used examples are given below:
+Some frequently used examples are given below:
 
 ## **Get entperise information**
 ```python
@@ -461,7 +461,7 @@ except ApiException as e:
 }
 ```
 
-We are always in active development and we try our best to keep all of our documentation up to date. However, if you have time you can check our latest documentation on [Github](https://github.com/esper-io/esper-client-py) for code samples and [API documentation](https://api.esper.io) as well as request and response formats.
+We are always in active development and we try our best to keep our documentation up to date. However, in the infrequent case it is not, you can check on [Github](https://github.com/esper-io/esper-client-py) for code samples and [API documentation](https://api.esper.io) for request and response formats.
 
-If you face any issue in SDK usage, we recommend you that you reach out to [Esper Dev Support](./support.md)
+If you face any issue in SDK usage, please reach out to [Esper Dev Support](./support.md)
 
