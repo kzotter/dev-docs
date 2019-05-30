@@ -5,22 +5,16 @@ readingTime: { text: "Not so long!", minutes: 3 }
 ---
 
 # Requirements
-In order to use Esper Dev, the following are the minimum requirements covering the various tools available from Esper Dev.
+In order to use the Esper tools, the following are the minimum requirements covering the different tools.
 
-## Web-Based Dev Console Requirements
-The Dev Console requires Chrome v57+.
+## Web-Based Esper Console Requirements
+The Esper Console requires Chrome v57+.
 
 ## Device Requirements
-Targeted Dedicated Devices must run Android version 4.4 KitKat (API Level 19) or above. Alternatively, Esper Development Devices running Esper Enhanced Android can be used; this opens up additional features when using Esper Dev.
+Targeted Dedicated Devices must run Android version 4.4 KitKat (API Level 19) or above. Alternatively, Esper Development Devices running Esper Enhanced Android can be used; this opens up additional features when using Esper.
 
-## Esper Dev Tools Requirements
-To use the Esper Dev Tools you need to have Python installed. Depending on the tool in use, you can install the required Python version for your platform from [python.org](https://www.python.org/)
-
-| Tool       | Python 2.7           | Python 3.6+  |
-| ------------- |:-------------:| -----:|
-| Esper SDK     | Yes | Yes |
-| Esper CLI     |     |   Yes |
-
+## Esper Tools Requirements
+To use the Esper SDK for Python or the Esper CLI you need to have Python 3.6+ installed. While you can use Python 2.7 with the Esper SDK for Python, we recommend using 3.6+ so you can also use the Esper CLI. You can install the required Python version for your platform from [python.org](https://www.python.org/)
 
 #### Esper SDK Language Support
 - Python
@@ -33,8 +27,8 @@ To use the Esper Dev Tools you need to have Python installed. Depending on the t
 - Windows
 
 
-If you face any issues setting up your requirements for Esper, please  reach out to Esper Dev [Support](./support.md)
+If you face any issues setting up your requirements for Esper, please  reach out to Esper [Support](./support.md)
 
 ## Next steps
 To get started, please see [Getting Started Guide](./gettingstarted.md)\
-To know more about Esper, visit [esper.io](https://esper.io)
+To learn more about Esper, visit [esper.io](https://esper.io)
