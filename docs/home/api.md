@@ -1,13 +1,13 @@
 # API Reference
 
-Esper APIs are a set of REST-based APIs that help you programmatically control and monitor Android-based Dedicated Devices running the Esper agent using Esper Manage. With these APIs, you can orchestrate and manage devices that have been provisioned against your Esper Manage environment. Furthermore, these APIs allows you to manage the Android applications installed on your Dedicated Device fleet. To read more about the various capabilities of Esper APIs and Esper managed devices, please visit [esper.io](https://esper.io).
+Esper APIs are a set of REST-based APIs that help you programmatically control and monitor Android-based Dedicated Devices running the Esper agent. By providing an SDK for Python, a CLI, and an Android Studio Plugin we are making it easier for developers to handle device management and application debugging during the application development process. With these APIs, you can orchestrate and manage devices that have been provisioned against your Esper endpoint. Furthermore, these APIs allows you to manage the Android applications installed on your Dedicated Device fleet. To read more about the various capabilities of Esper APIs and Esper managed devices, please visit [esper.io](https://esper.io).
 
-To use these APIs you will need to create a developer account with Esper and get access to the Esper Dev Console and the Esper Manage Dashboard. You can find out more about Esper and sign up for a free account at [esper.io/signup](https://esper.io/signup)
+To use these APIs you will need to create a trial account with Esper and get access to the Esper Console to generate an API key. You can find out more about Esper and sign up for a free account at [esper.io/signup](https://esper.io/signup)
 
 Esper APIs adhere to [Open API specification](https://swagger.io/docs/specification/about/) and you can check our latest API spec on [github](https://github.com/esper-io/esper-api-spec).
 
 ## Authentication
-The client needs to send authentication details to access the Esper APIs by generating and applying an API key. Be sure to sign up for your free trial account with Esper Dev to generate your key. See [Generating an API key](./module/genapikey.md)
+The client needs to send authentication details to access the Esper APIs by generating and applying an API key. Be sure to sign up for your free trial account with Esper to generate your key. See [Generating an API key](./module/genapikey.md)
 
 Once you have the access token, you need to send an authorization header as below
 
