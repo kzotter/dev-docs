@@ -1,6 +1,6 @@
 # Support
 
-If you face any issue with Esper Dev tools or have feedback or a suggestion, you can reach out to us through any of the preferred channels mentioned below:
+If you face any issue with using Esper, with any of our developer tools and APIs, or have feedback or a suggestion, you can reach out to us through any of the preferred channels mentioned below:
 
 ## Github Issues
 
@@ -13,11 +13,6 @@ If you face any issue with Esper Dev tools or have feedback or a suggestion, you
 1. [Esper community](https://gitter.im/esper-dev/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link): For general discussion, questions and feedback.
 2. [Esper API/SDK](https://gitter.im/esper-dev/esper-sdk?utm_source=share-link&utm_medium=link&utm_campaign=share-link): For API and SDK related discussion
 3. [Esper CLI](https://gitter.im/esper-dev/esper-cli?utm_source=share-link&utm_medium=link&utm_campaign=share-link): For CLI tool related discussion
-
-
-## Slack
-
-Join our Slack community [Epser on Slack]().
 
 ## Email
 
